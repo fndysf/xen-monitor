@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<Host name="xenserver">
+  <Host2Storage>
+    <PBD>
+      /opt/xensource/packages/iso
+    </PBD>
+    <PBD>
+      /dev/xapi/cd
+    </PBD>
+    <PBD>
+      /dev/xapi/block
+    </PBD>
+    <PBD>
+      //192.168.0.106/share
+    </PBD>
+  </Host2Storage>
+  <Host2Network>
+    <Network name="Pool-wide network associated with eth0">
+      <gateway>
+        192.168.0.1
+      </gateway>
+      <IP>
+        192.168.0.109
+      </IP>
+      <DNS>
+        202.120.2.101,8.8.8.8
+      </DNS>
+      <device>
+        eth0
+      </device>
+      <bridge>
+        xenbr0
+      </bridge>
+      <MAC>
+        54:9f:35:0d:92:4e
+      </MAC>
+    </Network>
+    <Network name="Pool-wide network associated with eth1">
+      <device>
+        eth1
+      </device>
+      <bridge>
+        xenbr1
+      </bridge>
+      <MAC>
+        54:9f:35:0d:92:50
+      </MAC>
+    </Network>
+  </Host2Network>
+  <Host2VM>
+    <VM>
+      Ubuntu
+    </VM>
+    <VM>
+      Control domain on host: xenserver
+    </VM>
+  </Host2VM>
+  <VM2Network>
+    <VM name="Ubuntu">
+      <network name="Pool-wide network associated with eth0">
+        <bridge>
+          xenbr0
+        </bridge>
+        <MAC>
+          4e:cd:9c:6c:c2:2e
+        </MAC>
+      </network>
+      <network name="Pool-wide network associated with eth1">
+        <bridge>
+          xenbr1
+        </bridge>
+        <MAC>
+          52:ce:00:99:3e:b4
+        </MAC>
+      </network>
+    </VM>
+  </VM2Network>
+</Host>

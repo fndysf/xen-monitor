@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<SRs>
+  <SR name="Local storage">
+    <PBDs>
+      <PBD>
+        <device_config/>
+      </PBD>
+    </PBDs>
+    <VDIs>
+      <VDI name="Ubuntu 0">
+        <location>
+          75317c70-6360-449c-9431-5941dcb00c27
+        </location>
+      </VDI>
+      <VDI name="Windows7 0">
+        <location>
+          a05f0372-f1a3-4392-ab6a-8a4d7d0690bf
+        </location>
+      </VDI>
+    </VDIs>
+    <physical_size>
+      290837233664
+    </physical_size>
+    <type>
+      lvm
+    </type>
+  </SR>
+  <SR name="XenServer Tools">
+    <PBDs>
+      <PBD>
+        <device_config>
+          <location>
+            /opt/xensource/packages/iso
+          </location>
+        </device_config>
+      </PBD>
+    </PBDs>
+    <VDIs>
+      <VDI name="XenCenter.iso">
+        <location>
+          XenCenter.iso
+        </location>
+      </VDI>
+      <VDI name="xs-tools.iso">
+        <location>
+          xs-tools-6.5.0.iso
+        </location>
+      </VDI>
+    </VDIs>
+    <physical_size>
+      -1
+    </physical_size>
+    <type>
+      iso
+    </type>
+  </SR>
+  <SR name="Removable storage">
+    <PBDs>
+      <PBD>
+        <device_config>
+          <location>
+            /dev/xapi/block
+          </location>
+        </device_config>
+      </PBD>
+    </PBDs>
+    <physical_size>
+      0
+    </physical_size>
+    <type>
+      udev
+    </type>
+  </SR>
+  <SR name="DVD drives">
+    <PBDs>
+      <PBD>
+        <device_config>
+          <location>
+            /dev/xapi/cd
+          </location>
+        </device_config>
+      </PBD>
+    </PBDs>
+    <VDIs>
+      <VDI name="SCSI 5:0:0:0">
+        <location>
+          /dev/xapi/cd/sr0
+        </location>
+      </VDI>
+    </VDIs>
+    <physical_size>
+      1073741312
+    </physical_size>
+    <type>
+      udev
+    </type>
+  </SR>
+  <SR name="iso">
+    <PBDs>
+      <PBD>
+        <device_config>
+          <location>
+            //192.168.0.106/share
+          </location>
+        </device_config>
+      </PBD>
+    </PBDs>
+    <VDIs>
+      <VDI name="ubuntu-14.04.4-server-amd64.iso">
+        <location>
+          ubuntu-14.04.4-server-amd64.iso
+        </location>
+      </VDI>
+      <VDI name="cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso">
+        <location>
+          cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso
+        </location>
+      </VDI>
+    </VDIs>
+    <physical_size>
+      105736302592
+    </physical_size>
+    <type>
+      iso
+    </type>
+  </SR>
+</SRs>
